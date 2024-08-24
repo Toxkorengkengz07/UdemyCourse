@@ -96,3 +96,20 @@
 
 // let [firstMountain] = ["Everest", "Fish Tail", "Annapurna"];
 // console.log(firstMountain);
+
+// var name = "everest";
+// var height = 8848;
+// var output = function () {
+//   console.log(`Mt.${this.name} is ${this.height} meters high`);
+// };
+// var adventureClimbing = { name, height, output };
+// adventureClimbing.output();
+
+var adventureClimbing = {
+  name: "everest",
+  height: 8848,
+  output() {
+    console.log(`Mt.${this.name} is ${this.height} meters high`);
+  },
+};
+adventureClimbing.output();
